@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 4px;
+        }
+    </style>
+    <title>Survey Form</title>
+</head>
+<body>
+    <form action="/survey.php">
+        <fieldset>      <h1 id="title">Farewell Party Survey Form</h1>
+      <div class="survey-Form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <br>
+      <div class="survey-Form">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+      </div>
+      <br>
+      <div class="survey-Form">
+        <label for="age">Age</label>
+        <input type="number" name="number" id="age" placeholder="Enter your age">
+      </div>
+      <br>
+      <div class="survey-Form">
+        <label for="role">Which option best describes you?</label>
+        <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">other</option>
+        </select>
+      </div>
+      <br>
+      <div class="survey-Form">
+        <label for="attendence">Will you attend the party ?</label>
+        <label for="attend-1">
+            <input type="radio" name="attend" id="attend-1">Yes</input>
+        </label>
+        <label for="attend-2">
+            <input type="radio" name="attend" id="attend-2">No</input>
+        </label>
+      </div>
+      <br>
+      <div class="survey-Form">
+        <label>What did you like about the program ?</label>
+        <br>
+        <label for="inp-1">
+            <input type="checkbox" id="inp-1">Training</input>
+        </label>
+        <br>
+        <label for="inp-2">
+            <input type="checkbox" id="inp-2">The Learning session from Industry Experts</input>
+        </label>
+        <br>
+        <label for="inp-3">
+            <input type="checkbox" id="inp-3">Community Meetups</input>
+        </label>
+        <br>
+        <label for="inp-4">
+            <input type="checkbox" id="inp-4">Brown Bag Sessions</input>
+        </label>
+        <br>
+        <label for="inp-5">
+            <input type="checkbox" id="inp-5">Switching to Hybrid Mode</input>
+        </label>
+        <br>
+        <label for="inp-6">
+            <input type="checkbox" id="inp-6">Food,Office etc.</input>
+        </label>
+        
+        </div>
+        <br>
+        <div class="survey-Form">
+            <label for="comments">
+                Any scomments or suggestions
+            </label>
+            <textarea name="comments" id="comments" ,placeholder="Enter your comments here"></textarea>
+        </div>
+       <br>
+       <div class="button">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+       </div>
+      
+    </fieldset>
+
+    </form>
+</body>
+</html>
